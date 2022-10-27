@@ -40,5 +40,5 @@ python3 main.py
 | max_distance_input | Max distance when connection between particles disappear | `160` | `100-200` ||
 
 
-Enjoy The Plexus Effect!
+## Enjoy The Plexus Effect!
 
