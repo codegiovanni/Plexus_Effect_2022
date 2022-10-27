@@ -20,7 +20,7 @@ You can choose between fullscreen or custom screen size, and choose the default 
 
 ## 2. Preview
 
-,,,,
+https://user-images.githubusercontent.com/72137556/198335674-7c2b39b8-2fcd-431d-a7d8-064cec118939.mp4
 
 
 ## 3. Run the script
