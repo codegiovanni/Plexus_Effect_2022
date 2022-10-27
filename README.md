@@ -6,7 +6,6 @@
 - [Preview](#2-preview)
 - [Run the script](#3-run-the-script)
 - [Arguments](#4-arguments)
-- [Screensaver](#5-screensaver)
 
 ## Install needed packages
 ```bash
