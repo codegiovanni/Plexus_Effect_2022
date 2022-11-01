@@ -40,4 +40,6 @@ python3 main.py
 
 
 ## Enjoy The Plexus Effect!
+The Plexus Effect (1 hour):
+https://youtu.be/pBt_dIL00NI
 
