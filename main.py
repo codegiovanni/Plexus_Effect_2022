@@ -6,6 +6,11 @@ import colorsys
 import inputs
 
 # ----------------------------------------------------------------------------------------------------------------------
+# CONSTANTS
+
+FPS = 60
+
+# ----------------------------------------------------------------------------------------------------------------------
 # PYGAME'S INITIATION
 
 pygame.init()
@@ -31,14 +36,6 @@ velocity = inputs.velocity_input
 # Max distance when connection between particles disappear
 
 max_distance = inputs.max_distance_input
-
-# ----------------------------------------------------------------------------------------------------------------------
-# CONSTANTS
-
-FPS = 60
-
-BLACK = (0, 0, 0)
-hue = 0
 
 # ----------------------------------------------------------------------------------------------------------------------
 # SURFACE DISPLAY
@@ -127,7 +124,7 @@ circles = Circle(100)  # change number of particles
 # MAIN FUNCTION
 
 def main():
-    global hue
+    hue = 0
 
     paused = False
     running = True
@@ -135,7 +132,7 @@ def main():
         clock.tick(FPS)
         pygame.display.set_caption("FPS: {:.2f}".format(clock.get_fps()))
 
-        screen.fill(BLACK)
+        screen.fill((0, 0, 0))
 
         # Get the color in RGB
         r, g, b = hsv2rgb(hue, 1, 1)
@@ -156,6 +153,10 @@ def main():
 
         # Increase hue for different color
         hue += 0.001  # increase for faster color change
+        if hue >= 1.0:
+            hue = 0
+
+        print(hue)
 
         circles.update()
 
